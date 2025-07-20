@@ -40,4 +40,4 @@ console.log("After slicing", myArr) // no change in original array
 const myn2 = myArr.splice(1,4)  // includes the last range
 console.log("Splicing ", myn2);
 
-console.log("After splicing ", myArr); // splicing remove that range values from original array
+console.log("After splicing ", myArr); // splicing remove that range values from original arrayA
