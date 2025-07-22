@@ -2,6 +2,7 @@
 
  const myNums = [1, 2, 3, 4]
                                                           // currval:- current value :- it is the element of array, object etc
+                                                          
 // const myTotal = myNums.reduce(function(acc, currval){  // acc:- accumulator
 //     console.log(`acc: ${acc} and currval: ${currval}`); // in every step acc follows acc = acc+currval
 //     return acc + currval
