@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai or code | DOM</title>
+</head>
+<body style="background-color: black;  color: white;">
+    <ul class="language">
+        <li>Javascript</li>
+        
+    </ul>
+</body>
+<script>
+    function addLanguage(LangName) {
+       const li = document.createElement('Li');
+       li.innerHTML = `${LangName}`
+       document.querySelector('.language').appendChild(li)
+       
+    }
+    addLanguage("python")         // here it traverse tree 1000 times if there is 1000 elements in ul
+    addLanguage("typescript")     // so appending is not good here
+    
+/*********************************************************/
+
+    function addOptiLanguage(LangName) {         // appending element in optimize way
+       const li = document.createElement('Li')   
+       li.appendChild(document.createTextNode(LangName))  // just creating node inside language class
+       document.querySelector('.language').appendChild(li)  // append child
+    }
+    addOptiLanguage('golang')
+
+// Edit e.g.-1
+
+   const secondLang = document.querySelector("li:nth-child(2)")
+   // secondLang.innerHTML = "mojo" // long traversing
+   const newli = document.createElement('li')
+   newli.textContent = "mojo"
+   secondLang.replaceWith(newli)
+
+// Edit e.g.-2
+
+const firstLang = document.querySelector("li:first-child")
+firstLang.outerHTML = '<li>Typescript</li>'
+
+// remove
+
+const lastLang = document.querySelector('li:last-child')
+lastLang.remove()
+</script>
+</html>
