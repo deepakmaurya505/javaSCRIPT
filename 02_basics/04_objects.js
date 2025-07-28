@@ -33,7 +33,7 @@ const obj3 = {5: "c", 6: "d"}
 /*********************  Spread in objects *********************** */
 
 const obj4 = {...obj1, ...obj2,...obj3}             
-// console.log(obj4) 
+console.log(obj4) 
 
 /***************** Array of objects ************************** */
 
@@ -71,7 +71,7 @@ const course ={
 
 // course.courseInstructor
 
-const {courseInstructor: instructor} = course  // destucturing of objects
+const {courseInstructor: instructor} = course  // destucturing of objects:- courseInstructor ka naam change kar ke instructor kar diye
 
 // console.log(courseInstructor);
 console.log(instructor);

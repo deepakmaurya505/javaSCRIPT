@@ -30,7 +30,7 @@ console.log(typeof newArr);
 
 // @@@@@@@@@@@@@@@@@@@@ slice , splice @@@@@@@@@@@@@@@@@@@@@
 
-console.log("A ", myArr)
+console.log("A ", myArr)    // Assigning myArr as A
 
 const myn1 = myArr.slice(1,4) // not include 4
 console.log("slicing ", myn1);
